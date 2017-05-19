@@ -1,0 +1,67 @@
+body {
+	background: #f2f2f2;
+	font-family: '함초롬돋움';
+	font-size: 16px;
+	text-align: center;
+	margin: 0;
+}
+#wrapper{
+	padding-top: 10px;
+}
+#top_bar{
+	width: 70.1%;
+	margin-left: 5%;
+}
+td{
+	border-top: 2px solid #737373;
+	border-bottom: 2px solid #737373;
+	border-right:2px solid #737373;
+	border-left:2px solid #737373;
+	background: white;
+	padding: 5px;
+}
+#title{
+	font-size: 18px;
+}
+#content_wrapper{
+	width: 69.7%;
+	float: left;
+	height:500px;
+	margin-left: 5%;
+	
+	border-bottom: 2px solid #737373;
+	border-right:2px solid #737373;
+	border-left:2px solid #737373;
+	background: white;
+}
+#content{
+
+	text-align: left;
+	padding: 10px 15px;
+}
+#backtolist_btn{
+	border-bottom: 2px solid #737373;
+	border-right:2px solid #737373;
+	border-left:2px solid #737373;
+	width: 35%;
+	float: left;
+margin-left: 5%;
+}
+#write_btn{
+	border-bottom: 2px solid #737373;
+	border-right:2px solid #737373;
+	border-left:2px solid #737373;
+	width: 35.1%;
+	float: left;
+
+}
+#backtolist_btn, #write_btn{
+	border: 0;
+	background: #7bb080;
+	color: #F2F2F2;
+	padding: 5px 8px;
+	border-bottom: 2px solid #737373;
+	border-right:2px solid #737373;
+	border-left:2px solid #737373;
+}
+

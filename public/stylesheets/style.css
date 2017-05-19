@@ -1,0 +1,67 @@
+
+
+body {
+  margin: 0px;
+  padding:0px;
+  -webkit-user-select:none; /* 웹페이지 드래그 방지 */
+
+}
+#cv{
+ 	border: 5px solid #689470;
+ margin-left: 5px;
+ margin-top: 5px;
+  padding: 0px;/* 
+  width: 860px; * css에서 width, height는 늘리는 것일 뿐(불필요한 속성), 캔버스의 드로잉 영역은 200, 100으로 고정되어 있음
+  height:645px; */
+}
+ 
+
+.menu button{
+
+  width: 150px;
+  height: 50px;
+}
+#clear{
+	position:absolute;
+ top:15px;
+ left:450px;
+ margin-left: 5px;
+ margin-top: 5px;
+  width:120px;
+	 height:40px;
+}
+ 
+fieldset{
+	top:10px;
+	 width:90px;
+	 height:40px;
+}
+ 
+#pen_shape{
+ position:absolute;
+ top:10px;
+ left:290px;
+
+}
+#colorfield{
+ position:absolute;
+ top:10px;
+ left:10px;
+
+}
+#widthfield{
+ position:absolute;
+ top:10px;
+ left:150px;
+
+}
+#pen_width{
+
+ width:90px;
+height:25px;
+}
+#pen_color{
+
+ width:90px;
+height:25px;
+}

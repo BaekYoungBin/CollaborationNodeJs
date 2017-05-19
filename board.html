@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- board.html -->
+ <meta charset="UTF-8">
+ <title>E-BOARD</title>
+ <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+ <script src="../javascripts/board.js"></script>
+ <script src="/socket.io/socket.io.js"></script>
+ <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body>
+<!-- 캔버스 태그는 width, height를 css에서 설정하면 안되고, 아래처럼 태그 내에서 적어야, 드로잉이 (배율조정 없이) 잘 그려짐 -->
+<canvas id="cv" width="880" height="670"></canvas>
+<div class="menu">
+ <button id="clear">clear</button>
+ <fieldset id = "colorfield">
+  <legend>색상 변경</legend>
+  <select id='pen_color'></select>
+ </fieldset>
+ 
+ <fieldset id = "widthfield">
+  <legend>펜 굵기</legend>
+  <select id='pen_width'></select>
+ </fieldset>
+ 
+ <fieldset id='pen_shape'>
+  <legend>분필 모양</legend>
+ </fieldset>
+</div>
+
+</body>
+</html>

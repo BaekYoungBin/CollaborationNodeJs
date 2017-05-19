@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+
+      <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+      Remove this if you use the .htaccess -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+      <title>Frame</title>
+      <meta name="description" content="">
+      <meta name="author" content="PC-164">
+
+      <meta name="viewport" content="width=device-width; initial-scale=1.0">
+      
+      <!--js-->
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+      <!--css-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" media="screen" href="../stylesheets/Frame.css">      
+      <!-- chat -->
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+      <script src="../javascripts/chat.js"></script>
+      
+  
+
+   </head>
+
+   <body>
+      <div class="sidebar">
+         <a href="Project">그루핑</a>
+         <ul class="menu">
+            <li><a href="Task" target="cwindow" onclick="iFrameLoad(0); return flase"> <span>할 일</span> </a></li>
+            <li><a href="Calendar" target="cwindow" onclick="iFrameLoad(1); return flase"> <span>일정</span></a></li>
+            <li><a href="Mindmap" target="cwindow" onclick="iFrameLoad(2); return flase"> <span>그림판</span> </a></li> 
+            <li><a href="File_Share" target="cwindow" onclick="iFrameLoad(3); return flase"> <span>파일공유</span> </a></li>
+            <li><a href="Vote" target="cwindow" onclick="iFrameLoad(4); return flase"> <span>부가기능</span> </a></li> 
+         </ul>   
+         <div id="menu_fix">
+            <ul id="submenu" class="menu">
+               <li><a name="info" href="Mypage"> <span>내 정보</span> </a></li> 
+               <li><a name="community" href="Community"> <span>커뮤니티</span> </a></li>
+               <li><a name="logout" href="/"> <span>로그아웃</span> </a></li>
+            </ul>
+         </div>
+      </div>
+      
+      <div id="iframediv">
+         <iframe id="iframe" src="Task" name="cwindow"></iframe>
+      </div>
+      
+      <div id="mem_chat">
+
+         <div id="mem" >
+         참여중인 멤버
+         <button id="mem_cnt3" ></button>
+         
+				<button id="MemberAddButton" href="javascript:void();" onclick="MemberPopUp();">초대</button>
+				<div id="mem_list">
+                
+					<ul id="online_mem"></ul>	
+					<ul id="offline_mem"></ul>
+
+				</div>
+			</div>
+         <div id="chat">
+            <div id="messages">
+            </div>
+            <form id="send" action="">
+               <input id="m" autocomplete="off" />
+               <input id="sendbtn" type="submit" value="보내기" />
+            </form>
+         </div>
+      </div>
+   </body>
+</html>
